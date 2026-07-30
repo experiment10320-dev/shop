@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>彥棠遊戲帳號代購店</title>
     <style>
-        /* 網頁背景與整體排版設定 */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); /* 深藍色漸層背景 */
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
             color: #ffffff;
             margin: 0;
             padding: 0;
@@ -17,14 +16,12 @@
             align-items: center;
             min-height: 100vh;
         }
-
-        /* 導覽與右上角按鈕區塊 */
         .nav-container {
             width: 100%;
             max-width: 800px;
             padding: 20px;
             display: flex;
-            justify-content: space-between; /* 讓搜尋跟賣場按鈕分居左右 */
+            justify-content: space-between;
             align-items: center;
             box-sizing: border-box;
         }
@@ -38,7 +35,6 @@
             cursor: pointer;
             outline: none;
         }
-        /* 右上角 8591 賣場藍色按鈕 */
         .shop-btn {
             background-color: #2563eb;
             color: white;
@@ -53,8 +49,6 @@
         .shop-btn:hover {
             background-color: #1d4ed8;
         }
-
-        /* 網頁主體內容區塊 */
         .main-card {
             background-color: rgba(255, 255, 255, 0.95);
             color: #1e293b;
@@ -67,8 +61,6 @@
             margin-top: 20px;
             box-sizing: border-box;
         }
-
-        /* 遊戲標題與標籤 */
         .game-title {
             font-size: 28px;
             font-weight: bold;
@@ -82,8 +74,6 @@
             font-size: 15px;
             margin-bottom: 30px;
         }
-
-        /* 每一行按鈕與說明的橫條排版 */
         .row-item {
             display: flex;
             align-items: center;
@@ -109,8 +99,6 @@
             color: #64748b;
             margin-top: 3px;
         }
-
-        /* 綠色點我開始查詢按鈕 */
         .green-btn {
             background-color: #10b981;
             color: white;
@@ -125,8 +113,6 @@
         .green-btn:hover {
             background-color: #059669;
         }
-
-        /* 底部免責聲明 */
         .footer-text {
             font-size: 11px;
             color: #94a3b8;
@@ -137,59 +123,48 @@
 </head>
 <body>
 
-    <!-- 頂部導覽區塊 -->
     <div class="nav-container">
-        <!-- 左側搜尋切換下拉選單 -->
         <select class="search-box" onchange="location = this.value;">
             <option value="">🔍 請選擇或搜尋遊戲...</option>
             <option value="#" selected>鈴蘭之劍：為這和平的世界</option>
             <option value="#">排球少年!! FLY HIGH (尚未設定)</option>
             <option value="#">原神 (尚未設定)</option>
         </select>
-        
-        <!-- 右上角 8591 正確賣場連結按鈕 -->
-        <a href="https://www.8591.com.tw/user-userAppraise.html?type=all&from=fromBuyer&userId=1149195&role=B" target="_blank" class="shop-btn">🛒 前往 8591 賣場 (編號:1149195)</a>
+        <a href="https://8591.com.tw" target="_blank" class="shop-btn">🛒 前往 8591 賣場 (編號:1149195)</a>
     </div>
 
-    <!-- 中間主要的白色卡片區塊 -->
     <div class="main-card">
-        
-        <!-- 1. 遊戲名字與標籤 -->
         <div class="game-title">鈴蘭之劍：為這和平的世界</div>
         <div class="game-tags">港台服 / 安卓&iOS 適用</div>
         <p style="font-size: 14px; color: #64748b; margin-top: -15px; margin-bottom: 30px;">★ 請選擇要查詢的清單 ★</p>
 
-        <!-- 2. 查詢連結 ① 的橫條 -->
+        <!-- 連結一 -->
         <div class="row-item">
             <div class="text-info">
                 <div class="text-title">1. 頂級組合帳號清單 港台庫①</div>
                 <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
             </div>
-            <!-- 已嵌入真實連結 ① -->
-            <a href="http://jiankj.cn" target="_blank" class="green-btn">點我開始查詢</a>
+            <a href="http://chushi.jiankj.cn:81/games/llzj/index.php" target="_blank" class="green-btn">點我開始查詢</a>
         </div>
 
-        <!-- 3. 查詢連結 ② 的橫條 -->
+        <!-- 連結二 -->
         <div class="row-item" style="border-left-color: #10b981;">
             <div class="text-info">
                 <div class="text-title">2. 特價組合帳號清單 港台庫②</div>
                 <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
             </div>
-            <!-- 已嵌入真實連結 ② -->
-            <a href="http://chanshiguan.me" target="_blank" class="green-btn">點我開始查詢</a>
+            <a href="http://chushi.chanshiguan.me/91" target="_blank" class="green-btn">點我開始查詢</a>
         </div>
 
-        <!-- 4. 查詢連結 ③ 的橫條 -->
+        <!-- 連結三 -->
         <div class="row-item" style="border-left-color: #f59e0b;">
             <div class="text-info">
                 <div class="text-title">3. 特價組合帳號清單 港台庫③</div>
                 <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
             </div>
-            <!-- 已嵌入真實連結 ③ -->
-            <a href="https://koif.cn" target="_blank" class="green-btn">點我開始查詢</a>
+            <a href="https://koif.cn/index/game/index/id/84" target="_blank" class="green-btn">點我開始查詢</a>
         </div>
 
-        <!-- 5. 底部免責聲明 -->
         <div class="footer-text">
             本網站僅為資訊入口導向，所連結之外部查號台非本站所有。<br>
             帳號最終歸屬權與遊戲官方規範請買家自行評估。
