@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彥棠遊戲帳號代購店</title>
+    <style>
+        /* 網頁背景與整體排版設定 */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); /* 深藍色漸層背景 */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 導覽與右上角按鈕區塊 */
+        .nav-container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* 讓搜尋跟賣場按鈕分居左右 */
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .search-box {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 2px solid #3b82f6;
+            border-radius: 8px;
+            background-color: #1e293b;
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+        /* 右上角 8591 賣場藍色按鈕 */
+        .shop-btn {
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: background 0.2s;
+        }
+        .shop-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* 網頁主體內容區塊 */
+        .main-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #1e293b;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 遊戲標題與標籤 */
+        .game-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1e1b4b;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .game-tags {
+            color: #ef4444;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* 每一行按鈕與說明的橫條排版 */
+        .row-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f1f5f9;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3b82f6;
+            text-align: left;
+        }
+        .text-info {
+            flex: 1;
+            padding-right: 15px;
+        }
+        .text-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        .text-desc {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 3px;
+        }
+
+        /* 綠色點我開始查詢按鈕 */
+        .green-btn {
+            background-color: #10b981;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        .green-btn:hover {
+            background-color: #059669;
+        }
+
+        /* 底部免責聲明 */
+        .footer-text {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 40px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頂部導覽區塊 -->
+    <div class="nav-container">
+        <!-- 左側搜尋切換下拉選單 -->
+        <select class="search-box" onchange="location = this.value;">
+            <option value="">🔍 請選擇或搜尋遊戲...</option>
+            <option value="#" selected>鈴蘭之劍：為這和平的世界</option>
+            <option value="#">排球少年!! FLY HIGH (尚未設定)</option>
+            <option value="#">原神 (尚未設定)</option>
+        </select>
+        
+        <!-- 右上角 8591 正確賣場連結按鈕 -->
+        <a href="https://www.8591.com.tw/user-userAppraise.html?type=all&from=fromBuyer&userId=1149195&role=B" target="_blank" class="shop-btn">🛒 前往 8591 賣場 (編號:1149195)</a>
+    </div>
+
+    <!-- 中間主要的白色卡片區塊 -->
+    <div class="main-card">
+        
+        <!-- 1. 遊戲名字與標籤 -->
+        <div class="game-title">鈴蘭之劍：為這和平的世界</div>
+        <div class="game-tags">港台服 / 安卓&iOS 適用</div>
+        <p style="font-size: 14px; color: #64748b; margin-top: -15px; margin-bottom: 30px;">★ 請選擇要查詢的清單 ★</p>
+
+        <!-- 2. 查詢連結 ① 的橫條 -->
+        <div class="row-item">
+            <div class="text-info">
+                <div class="text-title">1. 頂級組合帳號清單 港台庫①</div>
+                <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
+            </div>
+            <!-- 已嵌入真實連結 ① -->
+            <a href="http://jiankj.cn" target="_blank" class="green-btn">點我開始查詢</a>
+        </div>
+
+        <!-- 3. 查詢連結 ② 的橫條 -->
+        <div class="row-item" style="border-left-color: #10b981;">
+            <div class="text-info">
+                <div class="text-title">2. 特價組合帳號清單 港台庫②</div>
+                <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
+            </div>
+            <!-- 已嵌入真實連結 ② -->
+            <a href="http://chanshiguan.me" target="_blank" class="green-btn">點我開始查詢</a>
+        </div>
+
+        <!-- 4. 查詢連結 ③ 的橫條 -->
+        <div class="row-item" style="border-left-color: #f59e0b;">
+            <div class="text-info">
+                <div class="text-title">3. 特價組合帳號清單 港台庫③</div>
+                <div class="text-desc">* 進入網頁複製想要的角色編號後，找我們詢價與開單。</div>
+            </div>
+            <!-- 已嵌入真實連結 ③ -->
+            <a href="https://koif.cn" target="_blank" class="green-btn">點我開始查詢</a>
+        </div>
+
+        <!-- 5. 底部免責聲明 -->
+        <div class="footer-text">
+            本網站僅為資訊入口導向，所連結之外部查號台非本站所有。<br>
+            帳號最終歸屬權與遊戲官方規範請買家自行評估。
+        </div>
+    </div>
+
+</body>
+</html>
